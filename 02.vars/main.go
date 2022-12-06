@@ -2,6 +2,7 @@ package main
 
 func main() {
 	var hello string = "hello,golang"
-	println(hello)
+	var world = "world"
+	println(hello, world)
 
 }
