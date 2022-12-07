@@ -34,4 +34,14 @@ func main() {
 	fmt.Println(int6)
 	var int7 int = int(int6)
 	fmt.Println(int7)
+
+	age := 30
+	fmt.Printf("%p\n", &age)
+	age, time := 32, "时间"
+	fmt.Printf("%p\n", &age)
+	fmt.Println(age, time)
+	{
+		age := 3
+		fmt.Printf("%p\n", &age)
+	}
 }
