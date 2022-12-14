@@ -5,12 +5,28 @@ import (
 )
 
 func main() {
+	var name string
+	fmt.Print("姓名")
+	fmt.Scanln(&name)
+	
 	var weight float64 = 100.0
+	fmt.Print("体重（kg）")
+	fmt.Scanln(&weight) // &weight表示取这个盒子的编号，去取值，录入
+
 	var tall float64 = 1.76
+	fmt.Print("身高（m）")
+	fmt.Scanln(&tall)
+
 	var bmi float64 = weight / (tall * tall)
 	var age int = 26
+	fmt.Print("年龄（岁）")
+	fmt.Scanln(&age)
+
 	var sexWight int
 	var sex string = "男"
+	fmt.Print("性别（男|女）")
+	fmt.Scanln(&sex)
+
 	if sex == "男" {
 		sexWight = 1
 	} else {
@@ -105,3 +121,5 @@ func main() {
 	}
 
 }
+
+// go build
